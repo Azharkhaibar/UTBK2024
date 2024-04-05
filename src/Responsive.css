@@ -1,0 +1,248 @@
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-around; /* Untuk membuat navbar menjadi tengah */
+    }
+
+    .navbar-logo {
+        font-size: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar-list {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #5078f9;
+        position: absolute;
+        top: 60px; /* Sesuaikan dengan kebutuhan */
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        z-index: 1000; /* Pastikan z-index di atas elemen lain yang mungkin ada */
+    }
+
+    .navbar-list.open {
+        display: flex;
+    }
+
+    .navbar-list li {
+        margin: 10px 0;
+    }
+
+    .navbar-list li a {
+        font-family: "Epilogue", sans-serif;
+        color: #fff; /* Sesuaikan dengan kebutuhan */
+        text-decoration: none; /* Sesuaikan dengan kebutuhan */
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: auto; /* Mengubah tinggi header agar sesuai dengan konten */
+        padding-top: 50px; /* Menambahkan ruang di bagian atas header */
+    }
+
+    .header-container h1 {
+        font-size: 40px; /* Mengurangi ukuran font untuk tampilan yang lebih kecil */
+        margin-top: 13%; /* Mengurangi margin untuk tampilan yang lebih kecil */
+    }
+
+    .texth1-header {
+
+    }
+
+    .image-scroll {
+        display: block; /* Mengubah tata letak menjadi blok */
+        overflow-x: auto; /* Menambahkan overflow-x jika gambar lebih lebar dari layar */
+        white-space: nowrap; /* Mencegah wrapping teks */
+    }
+
+    .image-scroll-container {
+        margin: 10px auto; /* Menengahkan kontainer gambar */
+        text-align: center; /* Menengahkan gambar */
+    }
+
+    .image-scroll-container img {
+        width: 80%; /* Mengubah lebar gambar agar sesuai dengan lebar layar */
+        max-width: 100%; /* Memastikan gambar tidak melebihi lebar layar */
+        height: auto;
+        margin: 0 5px; /* Menambahkan sedikit ruang di antara gambar */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        height: 75vh; /* Mengubah tinggi agar sesuai dengan konten */
+        border-bottom-left-radius: 60% 8%; /* Menghapus radius di sudut */
+        border-bottom-right-radius: 60% 8%;
+    }
+
+    .about-container p {
+        font-size: 15px;
+        width: 90%;
+        margin: 20px auto;
+        line-height: 35px;
+    }
+
+    .btn-link-grup {
+        font-size: 16px; /* Mengurangi ukuran font untuk tampilan yang lebih kecil */
+        width: 50%; /* Mengubah lebar tombol agar sesuai dengan lebar layar */
+        max-width: 100%; /* Mengatur lebar maksimum agar tidak melebihi lebar layar */
+        margin: 20px 100px;
+
+    }
+    @media screen and (max-width: 768px) {
+    .kelompok-right h2 {
+        font-size: 27px;
+    }
+
+        .kelompok img {
+            width: 180px;
+        }
+        .kelompok-left {
+            position: relative;
+            height: 150px;
+        }
+
+        .kelompok-left img {
+            width: 200px;
+            height: auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+
+    }
+
+    @media screen and (max-width: 768px) {
+        .gallery {
+            height: 34vh;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+    .pelaksanaan {
+        height: 104vh; /* Tinggi disesuaikan secara otomatis */
+    }
+
+    .jadwal {
+        width: 90%; /* Lebar diubah menjadi 90% */
+        margin: 10px auto; /* Margin diubah menjadi 10px secara otomatis */
+    }
+
+    .texth2-pelaksanaan {
+        font-size: 32px; /* Ukuran font disesuaikan */
+    }
+
+    .jadwal-item {
+        flex-direction: column; /* Tampilkan item jadwal dalam satu kolom */
+        margin-top: 30px;
+
+    }
+
+    .jadwal-item h3 {
+        font-size: 18px; /* Ukuran font disesuaikan */
+    }
+
+    .notes h4 {
+        margin-top: 7%; /* Margin atas diubah */
+        font-size: 24px; /* Ukuran font disesuaikan */
+    }
+
+    .notes p {
+        margin-top: 3%; /* Margin atas diubah */
+        font-size: 18px; /* Ukuran font disesuaikan */
+    }
+}
+
+    @media screen and (max-width: 768px) {
+        .gallery h1 {
+            font-size: 25px;
+        }
+    }
+
+@media screen and (max-width: 768px) {
+
+    iframe {
+        width: 380px;
+        height: 300px;
+    }
+    .maps {
+        height: 100vh;
+    }
+    .maps-container {
+        order: -1;
+        display: flex;
+        flex-direction: column/* Memindahkan elemen .maps ke atas */
+    }
+
+    .maps h1 {
+        margin-top: 10%; /* Mengatur margin atas yang lebih kecil di perangkat seluler */
+        font-size: 28px;
+
+    }
+
+    .left-map h2 {
+        font-size: 18px;
+    }
+
+    .left-map, .right-map {
+        width: 90%; /* Lebar diubah menjadi 90% di perangkat seluler */
+        margin-top: 5px; /* Margin atas ditambahkan untuk memberikan ruang antar elemen */
+    }
+
+    .left-map h2 {
+        width: 100%; /* Lebar teks disesuaikan dengan lebar parent element di perangkat seluler */
+        padding-left: 0; /* Padding kiri dihapus di perangkat seluler */
+        text-align: center; /* Teks diposisikan ke tengah */
+    }
+}
+
+    @media screen and (max-width: 768px){
+        .contact-overlay h1 {
+          font-size: 28px;
+            color: white;
+            padding-bottom: 10%;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+    .contact h1 {
+        font-size: 2.5rem; /* Mengurangi ukuran font */
+    }
+
+    .contact-person {
+        width: 100%; /* Mengubah lebar menjadi 100% */
+    }
+
+    .contact-person img {
+        width: 20px; /* Mengurangi ukuran gambar */
+        margin-bottom: 5px; /* Mengurangi jarak antara gambar dan teks */
+    }
+
+    .contact-person h2 {
+        font-size: 1.5rem; /* Mengurangi ukuran font */
+    }
+
+    .contact-btn {
+        padding: 8px 16px; /* Mengurangi padding */
+        font-size: 16px; /* Mengurangi ukuran font */
+    }
+}
+
+    @media screen and (max-width: 768px){
+        .footer {
+            background: linear-gradient(155deg, #ffef9c 0%, #e080ff 100%);
+        }
+    }
+
+}

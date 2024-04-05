@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(100deg, #ffd200 0%, #c003ff 100%);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(160deg, #23c4ff 0%, #8b19f6 100%);
+    padding: 25px 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar.open {
+    height: auto;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.icon {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.icon.open:nth-child(1) {
+    transform: rotate(-45deg) translate(-2px, 6px);
+}
+
+.icon.open:nth-child(2) {
+    opacity: 0;
+}
+
+.icon.open:nth-child(3) {
+    transform: rotate(45deg) translate(-2px, -6px);
+}
+
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-list li {
+    margin-right: 20px;
+}
+
+.navbar-list li:last-child {
+    margin-right: 0;
+}
+
+.navbar-list li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar-list li a:hover {
+    color: #f0f0f0;
+}
+
+.navbar-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff6b6b;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+    background-color: #ff7e7e;
+}
+
+.header {
+    height: 80vh;
+    width: 100%;
+}
+
+.header h1 {
+    font-size: 75px;
+    text-shadow: 3px 3px 12px rgba(251, 252, 253, 0.92);
+    font-family: "Epilogue", sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+.texth1-header {
+    margin-top: 12%;
+}
+
+.image-scroll {
+    display: flex;
+    overflow-x: auto;
+}
+
+.image-scroll-container {
+    display: flex;
+    margin: 10px;
+}
+
+.image-scroll-container img {
+    width: 550px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#about {
+    height: 85vh;
+    width: 100%;
+    position: relative;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.deco {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    bottom: 75%;
+    left: 15%;
+    animation: bounce 3s infinite;
+}
+
+.deco1 {
+    position: absolute;
+    width: 80px;
+    height: auto;
+    bottom: 55%;
+    right: 15%;
+    animation: bounce 3s infinite;
+}
+
+.about-container p {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    width: 90%;
+    max-width: 750px;
+    font-family: "Epilogue", sans-serif;
+    margin: 20px auto;
+    line-height: 40px;
+    text-shadow: 3px 3px 12px rgba(251, 252, 253, 0.92);
+}
+
+.btn-link-grup {
+    padding: 15px 30px;
+    font-family: "Epilogue", sans-serif;
+    font-size: 20px;
+    background-color: #ff6a00;
+    border: none;
+    width: 90%;
+    max-width: 290px;
+    color: #fff;
+    margin: 20px 625px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-link-grup:hover {
+    background-color: #ee0979;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.kelompok {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    position: relative;
+    padding: 50px 0;
+}
+
+.ketua {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ketua-item {
+    position: relative;
+}
+
+.ketua-item img {
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.ketua-item h3 {
+    font-size: 25px;
+    font-family: "Epilogue", sans-serif;
+}
+
+.ketua-btn {
+    padding: 5px;
+    background: #fd6623;
+    font-size: 18px;
+    width: 100px;
+    margin-top: 10px;
+    font-family: "Epilogue", sans-serif;
+    color: white;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.ketua-btn:hover {
+    background-color: #ff8533;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.kelompok img {
+    margin: 20px auto;
+    display: block;
+    max-width: 90%;
+    height: auto;
+    z-index: 1;
+}
+
+.kelompok-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.decor {
+    width: 130px;
+    height: 130px;
+    background-color: #7f0cff;
+    border-radius: 50%;
+    filter: blur(100px);
+    position: absolute;
+    z-index: 0;
+    right: -16%;
+    bottom: 21%;
+    animation: bounce 4s infinite;
+}
+
+.decor1 {
+    width: 130px;
+    height: 130px;
+    background-color: #0cff51;
+    border-radius: 50%;
+    filter: blur(100px);
+    position: absolute;
+    z-index: 0;
+    left: -16%;
+    bottom: 60%;
+    animation: bounce 5s infinite;
+}
+
+.kelompok svg {}
+
+.kelompok-left {
+    width: 100%;
+    background-color: #ee0979;
+    display: flex;
+    border-bottom-left-radius: 60% 8% ;
+    border-bottom-right-radius: 60% 8%;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.kelompok-left img {
+    max-width: 80%;
+    height: auto;
+}
+
+.kelompok-right {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.kelompok-right h2 {
+    font-size: 45px;
+    font-style: italic;
+    font-family: "Epilogue", sans-serif;
+    margin: 50px 1px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.kelompok-right h2:hover {
+    transform: scale(1.1);
+}
+
+.kelompok-right {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.gallery {
+    height: 45vh;
+    width: 100%;
+    background-color: white;
+}
+
+.gallery h1 {
+    text-align: center;
+    font-size: 45px;
+    font-family: "Epilogue", sans-serif;
+}
+
+.gallery-container {
+    width: 100%;
+    height: 20vh;
+    margin-top: 20px;
+    position: relative;
+    background-color: #ffe0ee;
+}
+
+.gallery-container h2 {
+    color: white;
+    font-size: 60px;
+    font-family: "Epilogue", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pelaksanaan {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.texth2-pelaksanaan {
+    text-align: center;
+    font-family: "Epilogue", sans-serif;
+    font-size: 50px;
+}
+
+.jadwal {
+    width: 50%;
+    height: 90vh;
+    margin: 10px 401px;
+}
+
+.jadwal-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    margin-top: 35px;
+}
+
+.jadwal-item h3 {
+    font-size: 28px;
+    font-family: "Epilogue", sans-serif;
+}
+
+.notes h4 {
+    margin-top: 8%;
+    font-family: "Epilogue", sans-serif;
+    font-size: 30px;
+}
+
+.notes p {
+    font-family: "Epilogue", sans-serif;
+    margin-top: 3%;
+    font-size: 20px;
+}
+
+.maps {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.maps h1 {
+    font-size: 55px;
+    font-family: "Epilogue", sans-serif;
+    margin-top: 4%;
+    color: white;
+    text-align: center;
+}
+
+.maps-container {
+    display: flex;
+    align-items: center;
+    margin-top: 4%;
+}
+
+.left-map, .right-map {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.left-map h2 {
+    color: white;
+    width: 600px;
+    padding-left: 70px;
+    margin-top: 20px;
+}
+
+.left-map span {
+    font-style: italic;
+}
+
+.right-map {
+    width: 100%;
+    height: 450px;
+}
+
+.contact {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contact-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contact h1 {
+    font-size: 3rem;
+    font-family: "Epilogue", sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    font-style: italic;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 11%;
+    color: white;
+    z-index: 999;
+}
+
+.contact-person {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.contact-person img {
+    width: 25px;
+    padding: 2%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.contact-person h2 {
+    font-size: 2rem;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    border-radius: 18px;
+    background: #c003ff;
+    font-family: "Epilogue", sans-serif;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #9400d3;
+}
+
+.dekorasi {
+    width: 100%;
+    height: 270px;
+    position: absolute;
+    bottom: 0;
+    background: rgba(255,255,255,0);
+background: linear-gradient(178deg,rgba(255,255,255,0) 0%, rgba(0,0,0,0.76) 80%);
+background: -webkit-linear-gradient(178deg,rgba(255,255,255,0) 0%, rgba(0,0,0,0.76) 80%);
+background: -moz-linear-gradient(178deg,rgba(255,255,255,0) 0%, rgba(0,0,0,0.76) 80%);
+
+}
+
+.footer {
+    height: auto; /* Menggunakan tinggi otomatis agar konten dapat menyesuaikan */
+    min-height: 200px; /* Atur tinggi minimum untuk menghindari footer terlalu kecil */
+    width: 100%;
+    background: white;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column; /* Ubah arah konten menjadi vertikal di perangkat mobile */
+    align-items: center; /* Pusatkan konten di tengah */
+    text-align: center; /* Pusatkan teks */
+}
+
+.footer-container h3 {
+    font-size: 20px; /* Ukuran font yang lebih kecil untuk perangkat mobile */
+    margin: 20px 10px; /* Atur margin yang lebih kecil */
+    width: auto; /* Gunakan lebar otomatis untuk konten yang lebih responsif */
+    font-family: "Epilogue", sans-serif;
+}
+
+/* Membuat keyframes untuk animasi bounce */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Mengatur properti untuk gambar di dalam .footer-container */
+.footer-container img {
+    width: 35px; /* Ukuran gambar yang lebih kecil untuk perangkat mobile */
+    height: 35px;
+    margin: 20px; /* Atur margin yang lebih kecil */
+    animation: bounce 7s infinite; /* Animasi bounce selama 2 detik, berulang tak terbatas */
+}
+
+
+.terakhir {
+    width: 100%;
+    height: 5vh; /* Gunakan tinggi yang lebih kecil untuk bagian terakhir */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px; /* Ukuran font yang lebih kecil untuk perangkat mobile */
+}
